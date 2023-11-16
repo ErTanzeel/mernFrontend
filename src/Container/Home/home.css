@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    background: linear-gradient(136deg, #220e4d 2%, #6b068e 90.18%);
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-container {
+
+    height: 80vh;
+    width: 45%;
+    align-items: center;
+
+}
+
+.left-items {
+    position: relative;
+    top: 82px;
+}
+
+.workplace {
+    margin: 32px 0px;
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+}
+
+.logo {
+    width: 210px;
+    height: 50px
+}
+
+.right-container {
+    height: 80vh;
+    width: 43%;
+    background: white;
+    /* border: 2px solid white; */
+    border-radius: 25px;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    height: 56px;
+    background-color: #03c5cc;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 23px 23px 0px 0px;
+    opacity: 0.7;
+}
+
+
+.username {
+    margin-top: 22px;
+    text-align: left;
+    margin-left: 42px;
+}
+
+.password {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 42px;
+}
+
+.userFile {
+    text-align: left;
+    margin-left: 42px;
+}
+
+
+
+input[type=text],
+input[type=password]
+
+/* input[type=file] */
+    {
+    border: none;
+    border-bottom: 2px solid #03c5cc;
+    width: 500px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: transparent;
+    outline: none;
+}
+
+.btn-forgot {
+    margin-top: 25px;
+    font-weight: 500;
+    color: #03c5cc;
+    text-decoration: underline;
+}
+
+
+.button {
+    margin-top: 20px;
+    width: 400px;
+    background: linear-gradient(116.45deg, #03c5cc -23.1%, #4b008b 250.18%);
+    height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+
+form {
+    position: relative;
+    top: 40px;
+    height: 300px;
+    width: 600px;
+    margin: 10px 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(249, 6, 6);
+    text-decoration: underline;
+}
+
+
+/* // responsive */
+
+@media (min-width:320px) and (max-width:380px) {
+
+    .home {
+        background: linear-gradient(136deg, #220e4d 2%, #6b068e 90.18%);
+        height: 200vh;
+        width: 190vw;
+    }
+
+
+    .main-container {
+        height: 190vh;
+        width: 190vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: "yellow";
+    }
+
+
+    .right-container {
+        height: 80vh;
+        width: 78%;
+        margin-right: 95px;
+        background: white;
+        /* border: 2px solid white; */
+        border-radius: 25px;
+
+    }
+
+    .password {
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 5px;
+
+    }
+
+    .username {
+        margin-top: 22px;
+        text-align: left;
+        margin-left: 5px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        border: none;
+        border-bottom: 2px solid #03c5cc;
+        width: 370px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: transparent;
+        outline: none;
+    }
+
+
+    .left-container {
+
+        height: 80vh;
+        width: 45%;
+        position: relative;
+        right: 50px;
+
+    }
+
+    form {
+        position: relative;
+        top: 40px;
+        height: 300px;
+        width: 600px;
+        margin: 10px 10px;
+        padding-right: 125px;
+    }
+}
+
+@media (min-width:381px) and (max-width:768px) {
+    .home {
+        background: linear-gradient(136deg, #220e4d 2%, #6b068e 90.18%);
+        height: 188vh;
+        width: 185vw;
+    }
+
+    .main-container {
+        height: 188vh;
+        width: 185vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .right-container {
+        height: 80vh;
+        width: 76%;
+        margin-right: 95px;
+        background: white;
+        /* border: 2px solid white; */
+        border-radius: 25px;
+
+    }
+
+    input[type=text],
+    input[type=password] {
+        border: none;
+        border-bottom: 2px solid #03c5cc;
+        width: 370px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border: transparent;
+        outline: none;
+    }
+
+
+    form {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        top: 40px;
+        height: 300px;
+        width: 150vw;
+        margin: 10px 10px;
+        padding-right: 125px;
+    }
+
+    .password {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .username {
+        margin-top: 22px;
+        text-align: left;
+    }
+
+}

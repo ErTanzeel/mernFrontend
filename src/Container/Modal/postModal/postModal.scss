@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Modal1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: #000000b5;
+
+
+    .modalContent1 {
+        height: 525px;
+        width: 583px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 435px;
+        background-color: white;
+        top: 97px;
+        border-radius: 10px;
+        border-style: groove;
+        border-color: #03c5cc;
+
+
+        @media (min-width:320px) and (max-width:380px) {
+            top: 300px;
+            left: 85px;
+        }
+
+
+        .username {
+            margin-top: 22px;
+            text-align: left;
+            margin-left: 42px;
+        }
+
+
+        input[type=text] {
+            border: none;
+            border-bottom: 2px solid #03c5cc;
+            width: 415px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            outline: none;
+        }
+
+
+        .updateButton1 {
+            width: 207px;
+            margin-bottom: 10px;
+            height: 35px;
+            text-align: center;
+            margin-left: 181px;
+            margin-top: 25px;
+            background: linear-gradient(90deg, #03c5cc 0, #4b008b);
+            color: white;
+            border: 3px solid #03c5cc;
+            border-radius: 20px;
+
+        }
+
+        textarea {
+            margin-top: 7px;
+            width: 483px;
+            height: 172px;
+            border: none;
+            font-size: 24px;
+        }
+
+
+        #output4 {
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 27px;
+            height: 95px;
+        }
+    }
+
+
+}

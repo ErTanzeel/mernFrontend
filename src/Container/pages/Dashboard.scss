@@ -1,0 +1,522 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.header-class {
+    width: 100%;
+    height: 78px;
+    background: linear-gradient(90deg, #03c5cc 0, #4b008b);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    @media (min-width:320px) and (max-width:380px) {
+
+        width: fit-content;
+    }
+
+    @media (min-width:381px) and (max-width:768px) {
+        width: fit-content;
+
+
+
+
+    }
+
+
+
+
+
+    .logo {
+        width: 200px;
+        height: 38px;
+    }
+
+    .searchbar {
+        width: 332px;
+        background-color: white;
+        height: 32px;
+    }
+
+
+    input[type=search] {
+        border: none;
+        border-bottom: 2px solid #03c5cc;
+        width: 292px;
+        /* margin-bottom: 20px; */
+        margin-top: 3px;
+        border: transparent;
+        outline: none;
+    }
+
+    .logoutButton {
+        background-color: #4b008b;
+        color: white;
+        width: 99px;
+        height: 34px;
+        right: 0;
+        display: inline-block;
+        border: 2px solid #03c5cc;
+        border-radius: 19px;
+        margin-left: 6px;
+        cursor: pointer;
+
+
+
+    }
+
+    .icon {
+        width: 215px;
+        @media (min-width:381px) and (max-width:768px) {
+            width: 685px;
+
+    
+    
+    
+        }
+    }
+
+}
+
+
+
+
+/* // pannel */
+
+.mainPannel {
+    background-color: brown;
+    /* width: 100vw;`
+    height: 100vh; */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 300px 1fr 300px;
+
+    @media (min-width:320px) and (max-width:380px) {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    // left pannel 
+
+    .leftPannel {
+        background-color: whitesmoke;
+        border: 2px solid black;
+
+        .leftMenu {
+            height: auto;
+            width: 80%;
+            margin: 20px 8px 12px 20px;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1px;
+
+
+        }
+
+        .leftMenu li {
+            list-style-type: none;
+        }
+
+
+        .leftCategory {
+            height: auto;
+            text-align: left;
+            width: 80%;
+            margin: 20px 8px 12px 20px;
+            padding: 20px 0px 20px 0px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        .leftCategory h5 {
+            margin-left: 15px;
+            font-size: large;
+        }
+
+        .leftListItems {
+            margin: 15px;
+        }
+
+        .leftListItems button {
+            padding: 7px;
+            margin: 3px;
+            background: rgb(237, 234, 234);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+
+        .leftMenu span {
+            margin-left: 15px;
+            font-size: large;
+            font-weight: 550;
+        }
+
+        .leftMenu a {
+            text-decoration: none;
+        }
+
+        .leftMenuItem {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            color: black;
+            background: white;
+
+            border-radius: 10px;
+            height: 50px;
+        }
+
+        .leftMenuItem:hover {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            color: rgb(247, 240, 240);
+            background: linear-gradient(90deg, #03c5cc 0, #4b008b);
+            border-radius: 10px;
+            height: 50px;
+        }
+
+
+
+    }
+
+
+    // centre pannel
+    .centrePannel {
+        background-color: whitesmoke;
+
+        border: 2px solid black;
+        padding: 20px;
+
+
+        .inputInnerFeed {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+            height: 70px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+        }
+
+        .feedBtnContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .feedLeftBtn ul {
+            display: flex;
+            list-style-type: none;
+            /* margin-top: 5px; */
+        }
+
+        .feedLeftBtn li {
+            margin-right: 10px;
+        }
+
+        .feedLeftBtn a {
+            text-decoration: none;
+        }
+
+        .btnList,
+        .feedRecentBtn {
+            background: white;
+            font-size: medium;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+
+        .commentCard {
+            width: 705px;
+            height: auto;
+            background: white;
+            // background: rgb(243, 9, 9);
+            // border: 19px solid wheat;
+            border-radius: 21px;
+            margin: 50;
+            padding: 10px;
+            overflow-wrap: break-word;
+            // overflow-y: scroll;
+            margin-bottom: 15px;
+
+            @media (min-width:381px) and (max-width:768px) {
+                width: 575px;
+
+
+            }
+
+
+            .commentHeading {
+                margin-top: 10px;
+                text-align: left;
+                margin-left: 12px;
+                font-size: 20px;
+                font-weight: bold;
+
+
+            }
+
+            .commentProfile {
+                display: flex;
+                // background: pink;
+                margin-top: 20px;
+                height: 130px;
+
+            }
+
+            .postComment {
+                // background-color: rgb(113, 133, 41);
+                display: flex;
+                padding-right: 10px;
+                margin-top: 10px;
+
+            }
+
+            .typeComment {
+                // background-color: rgb(25, 241, 97);
+                margin-left: 12px;
+                width: 718px;
+                height: 72px;
+                border-radius: 70px;
+                border: 2px solid;
+                margin-top: 11px;
+                text-align: left;
+                position: relative;
+
+                .postButton {
+                    background-color: #4b008b;
+                    color: white;
+                    width: 100px;
+                    height: 38px;
+                    right: 0;
+                    border: 2px solid;
+                    border-radius: 19px;
+                    position: absolute;
+                    right: 31px;
+                    bottom: 15px;
+                    background: linear-gradient(90deg, #03c5cc 0, #4b008b);
+
+
+
+                }
+
+
+            }
+
+        }
+
+
+        .commentType {
+            border: none;
+            outline: none;
+            width: 70%;
+        }
+
+        .commentUser {
+            position: relative;
+            top: 31px;
+            font-size: 17px;
+            font-weight: 600;
+
+        }
+
+        .commentList {
+            width: 100%;
+            height: 50px;
+            background-color: yellow;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .commentYou {
+            position: relative;
+            top: 31px;
+            height: 29px;
+            width: 40px;
+            border: 1px solid red;
+            background-color: rgb(255, 255, 255);
+            margin-left: 6px;
+            border-radius: 6px;
+
+        }
+
+        .commentIcon {
+            // background-color: yellow;
+            text-align: left;
+            margin-left: 10px;
+
+        }
+
+        .commentbutton {
+            cursor: pointer;
+        }
+
+        .commentbutton:hover {
+            color: #4b008b;
+            font-weight: bold;
+        }
+
+
+        .commentBody {
+            // background: blue;
+            text-align: left;
+            margin: 8px;
+            height: 98px;
+
+            div {
+                padding-bottom: 15px;
+            }
+
+        }
+
+
+        #output1 {
+            width: 65px;
+            border-radius: 50%;
+            height: 65px;
+            margin-top: 8px;
+            // margin-bottom: 8px;
+            margin-left: 8px;
+
+        }
+
+        #output2 {
+            width: 80px;
+            border-radius: 50%;
+            height: 80px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 8px;
+
+        }
+
+
+
+
+        .careerAdvice {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .career {
+            background: white;
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+
+
+    }
+
+
+
+
+
+    //  right pannel
+    .rightPannel {
+        background-color: whitesmoke;
+        border: 2px solid black;
+
+
+
+        .leftMenu {
+            height: auto;
+            width: 80%;
+            margin: 20px 8px 12px 30px;
+            border-radius: 5px;
+            background-color: white;
+
+        }
+
+        .aboutLeftMenu {
+            height: auto;
+            width: 80%;
+            margin: 20px 8px 12px 30px;
+            border-radius: 5px;
+            background: linear-gradient(116.45deg, #03c5cc -23.1%, #4b008b 250.18%);
+            overflow-wrap: break-word;
+        }
+
+        .leftMenu li {
+            list-style-type: none;
+        }
+
+
+
+        #output {
+            width: 100px;
+            border-radius: 50%;
+            height: 95px;
+        }
+
+
+        .editable-input {
+            border: 2px solid;
+            font-size: inherit;
+            background: inherit;
+            color: inherit;
+            transition: .3s all linear;
+
+        }
+
+        :focus {
+            outline: none;
+            background: white;
+            color: #545454;
+
+        }
+
+
+        .profile {
+            text-align: left;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            margin-left: 12px;
+            font-size: 17px;
+            font-weight: bold;
+
+        }
+
+        .About {
+            text-align: left;
+            margin-bottom: 10px;
+            margin-top: 0px;
+            margin-left: 12px;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+
+        .userName {
+            margin-top: 25px;
+            font-size: 17px;
+            font-weight: 600;
+
+
+        }
+
+        .userName1 {
+            margin-top: 25px;
+            font-size: 17px;
+            font-weight: 600;
+
+
+        }
+
+    }
+
+
+
+}
